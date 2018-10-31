@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Location</string>
+
+    <string-array name="spinners">
+        <item>Node</item>
+        <item>Line</item>
+        <item>Polygon</item>
+    </string-array>
+
+    <string-array name="spinParent">
+        <item>Parent</item>
+        <item>Child</item>
+    </string-array>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0b96ffef"
+    android:layout_height="match_parent"
+    tools:context=".activity.SosActivity"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Code : "
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/txtSosCode"
+            android:textSize="20sp"
+            android:textColor="#ff0000"
+            android:hint="SOS code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select image?"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"/>
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            >
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/pic1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/image_deful"
+                />
+
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/pic2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/image_deful"
+                />
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/pic3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/image_deful"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/rdGroup"
+        android:gravity="center"
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        >
+        <RadioButton
+            android:background="@drawable/border_radio"
+            style="@style/RadioButtonStyle"
+            android:textSize="17sp"
+            android:id="@+id/rdCao"
+            android:text="Cao"
+            android:textColor="@drawable/select_color"
+            android:button="@null"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:checked="true"
+            />
+        <RadioButton
+            android:textColor="@drawable/select_color"
+            android:background="@drawable/border_radio"
+            android:textSize="17sp"
+            android:id="@+id/rdTrungBinh"
+            android:text="Trung Bình"
+            android:button="@null"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:checked="false"/>
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:background="@drawable/border_radio"
+            android:textColor="@drawable/select_color"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_width="100dp"
+            android:id="@+id/rdThap"
+            android:text="Thấp"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_height="30dp"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/rdGroup">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <EditText
+            android:background="@drawable/custom_edt"
+            android:id="@+id/edtTitle"
+            android:hint="Title"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            />
+
+        <EditText
+            android:background="@drawable/custom_edt"
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Note"
+            android:textSize="18sp"
+            android:lines="5"
+
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bug_button"
+                android:gravity="center"
+                android:text="Save"
+                android:textColor="#fff" />
+            <Button
+                android:id="@+id/btnIntent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bug_button"
+                android:text="Intent"
+                android:textColor="#fff" />
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bug_button"
+                android:text="Update"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
